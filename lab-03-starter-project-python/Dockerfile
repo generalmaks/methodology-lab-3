@@ -1,6 +1,8 @@
-FROM python:3.12-bullseye
+FROM alpine:3.19
 
 WORKDIR /app
+
+RUN apk add --no-cache python3 py3-pip
 
 RUN python3 -m venv /app/.venv
 
