@@ -18,7 +18,7 @@ var serveCmd = &cobra.Command{
 	Use:   "serve",
 	Short: "Run an http server to anser fizzbuzz queries",
 	Run: func(cmd *cobra.Command, args []string) {
-		tmpl := template.Must(template.ParseFiles("../templates/index.html"))
+		tmpl := template.Must(template.ParseFiles("./templates/index.html"))
 		type QueryContext struct {
 			QueryRaw string
 			Query    *int
