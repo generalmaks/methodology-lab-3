@@ -1,4 +1,4 @@
-FROM golang:1.24
+FROM golang:1.24.2-alpine
 
 WORKDIR /app
 
@@ -13,5 +13,4 @@ RUN go build -o build/fizzbuzz .
 
 EXPOSE 8080
 
-# Command to run the executable
 CMD ["build/fizzbuzz", "serve"]
