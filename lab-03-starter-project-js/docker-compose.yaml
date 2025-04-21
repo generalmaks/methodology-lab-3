@@ -8,7 +8,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - lab03-db:/usr/src/app
+      - lab03-db:/usr/src/app/db
     environment:
       - NODE_ENV=production
     restart: unless-stopped
